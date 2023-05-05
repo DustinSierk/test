@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Velocio Setup</title>
+    <style>
+	img {
+		height: 80px; /* adjust this to the height of your image */
+		margin-right: 20px;
+	  }
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select,
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  @media only screen and (max-width: 600px) {
+    form {
+      max-width: 100%;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <h1><img src="./logo.png" alt="Logo"></h1>
+    <form action="/action_page.php">
+      <label for="ssid">Choose a network:</label>
+      <select name="ssid" id="ssid">
+        <option value="CBCI-2679-2.4">CBCI-2679-2.4</option>
+        <option value="BST-HYA2.4">BST-HYA2.4</option>
+        <option value="VIS-2000">VIS-2000</option>
+        <option value="tl6aa35c">tl6aa35c</option>
+        <option value="CyBerWifi">CyBerWifi</option>
+        <option value="Spectrum2G">Spectrum2G</option>
+      </select>
+      <label for="pass">PASS:</label>
+      <input type="password" id="pass" name="pass" value="">
+      <label for="name">NAME:</label>
+      <input type="text" id="name" name="name" value="">
+      <label for="uuid">UUID:</label>
+      <input type="text" id="uuid" name="uuid" value="">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
